@@ -51,6 +51,21 @@ class ListTableViewController: UITableViewController {
             })
         }
     }
+    
+    // MARK - 控制器跳转方法
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        let vc=segue.destination as! DetailViewController
+        
+        if let indexPath=sender as? IndexPath{
+            vc.person=personList[indexPath.row]
+        }
+    }
+    
+    // MARK - 代理方法
+    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        tableView.deselectRow(at: indexPath, animated: true)
+        performSegue(withIdentifier: "list2detail", sender: indexPath)
+    }
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return personList.count
