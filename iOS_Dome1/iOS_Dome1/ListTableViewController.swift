@@ -58,6 +58,10 @@ class ListTableViewController: UITableViewController {
         
         if let indexPath=sender as? IndexPath{
             vc.person=personList[indexPath.row]
+            
+            vc.completionCallBack={
+                self.tableView.reloadRows(at: [indexPath], with: .automatic)
+            }
         }
     }
     
