@@ -13,6 +13,7 @@
 		0FEED9B71F5540BC000FEE15 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0FEED9B61F5540BC000FEE15 /* Assets.xcassets */; };
 		0FEED9C21F5548D0000FEE15 /* ListTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FEED9C11F5548D0000FEE15 /* ListTableViewController.swift */; };
 		0FEED9C61F554949000FEE15 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FEED9C51F554949000FEE15 /* DetailViewController.swift */; };
+		0FEED9C81F554C6D000FEE15 /* Person.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FEED9C71F554C6D000FEE15 /* Person.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		0FEED9BB1F5540BC000FEE15 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0FEED9C11F5548D0000FEE15 /* ListTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListTableViewController.swift; sourceTree = "<group>"; };
 		0FEED9C51F554949000FEE15 /* DetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
+		0FEED9C71F554C6D000FEE15 /* Person.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Person.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,6 +65,7 @@
 				0FEED9BB1F5540BC000FEE15 /* Info.plist */,
 				0FEED9C11F5548D0000FEE15 /* ListTableViewController.swift */,
 				0FEED9C51F554949000FEE15 /* DetailViewController.swift */,
+				0FEED9C71F554C6D000FEE15 /* Person.swift */,
 			);
 			path = iOS_Dome1;
 			sourceTree = "<group>";
@@ -139,6 +142,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0FEED9C81F554C6D000FEE15 /* Person.swift in Sources */,
 				0FEED9C21F5548D0000FEE15 /* ListTableViewController.swift in Sources */,
 				0FEED9B21F5540BC000FEE15 /* ViewController.swift in Sources */,
 				0FEED9B01F5540BC000FEE15 /* AppDelegate.swift in Sources */,
