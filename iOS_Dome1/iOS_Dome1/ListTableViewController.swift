@@ -62,6 +62,16 @@ class ListTableViewController: UITableViewController {
             vc.completionCallBack={
                 self.tableView.reloadRows(at: [indexPath], with: .automatic)
             }
+        }else{
+            vc.completionCallBack={[weak vc] in
+                guard let p=vc?.person else {
+                    return
+                }
+                
+                self.personList.insert(p, at: 0)
+                
+                self.tableView.reloadData()
+            }
         }
     }
     
